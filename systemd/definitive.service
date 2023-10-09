@@ -4,7 +4,8 @@ After=syslog.target
 After=network.target
 
 [Service]
-ExecStart=/home/deployment/definitive-web/bin/start.sh
+WorkingDirectory=/home/deployment/definitive-web
+ExecStart=/home/deployment/definitive-web/start.sh
 KillMode=control-group
 
 [Install]
