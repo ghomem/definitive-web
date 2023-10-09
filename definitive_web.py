@@ -81,3 +81,7 @@ def main_page():
     return render_template('main.html.j2', title="Definitive", subtitle="A place for less than serious definitions",
                            word_max_length=WORD_MAX_LENGTH, definition_max_length=DEFINITION_MAX_LENGTH,
                            see_also_max_length=SEE_ALSO_MAX_LENGTH, border_color=IMG_BORDER_COLOR, img_top_margin=IMG_TOP_MARGIN)
+
+
+if __name__ == '__main__':
+   app.run(debug=False, host='0.0.0.0')
