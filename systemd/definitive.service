@@ -1,0 +1,11 @@
+[Unit]
+Description=Definitive
+After=syslog.target
+After=network.target
+
+[Service]
+ExecStart=/home/deployment/definitive-web/bin/start.sh
+KillMode=control-group
+
+[Install]
+WantedBy=multi-user.target
