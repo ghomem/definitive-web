@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{{ title }}</title>
+    <meta
+      name="description"
+      content="A place on the Internet."
+    />
+    <link rel="shortcut icon" href="https://picocss.com/favicon.ico" />
+    <link rel="canonical" href="https://picocss.com/examples/basic-template/" />
+
+    <!-- Pico.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+
+    <!-- Custom template-->
+    <link rel="stylesheet" href="static/css/custom.css" />
+  </head>
+
+  <body>
+
+    <!-- HTMX -->
+    <script src="https://unpkg.com/htmx.org@1.9.6"></script>
+
+    <!-- Header -->
+    <header class="container" style="padding-bottom: 10px;padding-top: 10px;">
+      <hgroup>
+        <h1>{{ title }}</h1>
+        <h2>{{ subtitle }}</h2>
+      </hgroup>
+   </header>
+    <!-- ./ Header -->
+
+    <!-- Main -->
+    <main class="container" style="padding-bottom: 10px;padding-top: 10px;">
+
+      <div class="grid">
+
+        <div>
+          <!-- Form elements-->
+          <section id="form">
+            <!-- this form includes the HTMX hx-post and hx-target elements -->
+            <form hx-post="/render" hx-target="#the-image">
+              <!-- Input fields -->
+              <label for="word">Word</label>
+              <input type="text" id="word" name="word" maxlength="{{word_max_length}}"  value="Entropitis" />
+
+              <label for="word_class">Word Class</label>
+              <select id="word_class" name="word_class" required>
+                <option value="noun" selected>noun</option>
+                <option value="verb">verb</option>
+                <option value="adjective">adjective</option>
+                <option value="whoknows">whoknows</option>
+              </select>
+
+              <label for="definition">Definition</label>
+              <textarea id="definition" name="definition" maxlength="{{definition_max_length}}"  rows="3">A condition defined by the uncontrollable urge to introduce superfluous complexity in systems or processes.</textarea>
+
+              <label for="see_also">See also</label>
+              <input type="text" id="see_also" name="see_also" maxlength="{{see_also_max_length}}" value="autokafka" />
+
+              <!-- Select -->
+              <label for="avatar">Avatar</label>
+              <select id="avatar" name="avatar" required>
+                <option value="none">None</option>
+                <option value="grug">Grug</option>
+                <option value="normand" selected>Normand</option>
+                <option value="troll">Troll</option>
+                <option value="lasers">Lasers</option>
+                <option value="lulz">Lulz</option>
+                <option value="randall">Randall</option>
+              </select>
+
+              <!-- Buttons -->
+              <div class="grid">
+                <input type="submit" value="Generate" />
+                <input type="reset" value="Reset" />
+              </div>
+            </form>
+          </section>
+          <!-- ./ Form elements -->
+        </div>
+
+        <div id="the-image" hx-swap-oob="true">
+          <figure>
+          <img src="/static/img/initial-image.jpg" alt="Default image" style="border:1px solid {{img_border_color}}; margin-top: {{img_top_margin}}px"/>
+          </figure>
+        </div>
+
+      </div>
+      <!-- ./ Main -->
+
+    <!-- Footer -->
+    <footer class="container">
+      <small
+        >Built in a hurry with <a href="https://htmx.org">htmx</a> and <a href="https://picocss.com">Pico</a> •
+      </small
+      >
+    </footer>
+    <!-- ./ Footer -->
+
+  </body>
+</html>
+
