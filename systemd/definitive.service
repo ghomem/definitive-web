@@ -9,6 +9,7 @@ ExecStart=/home/deployment/definitive-web/start.sh
 KillMode=control-group
 User=deployment
 Group=deployment
+EnvironmentFile=/etc/default/definitive
 
 [Install]
 WantedBy=multi-user.target
