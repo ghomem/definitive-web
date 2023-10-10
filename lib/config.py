@@ -10,7 +10,7 @@ WHITELIST_CONTENT = LETTERS + NUMBERS
 ID_STRING_LENGTH = 12
 
 PYTHON_CMD = '/usr/bin/python3'
-RENDER_CMD = '/home/gustavo/Work/gitrepos/GH/definitive/definitive.py'
+RENDER_CMD = '/home/deployment/definitive/definitive.py'
 RENDER_OPT_WORD_CLASS = '-c noun'
 
 ERROR_WORD = 'error'
