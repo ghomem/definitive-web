@@ -15,9 +15,14 @@ RENDER_OPT_WORD_CLASS = '-c noun'
 
 ERROR_WORD = 'error'
 ERROR_WORD_CLASS = 'bummer'
-ERROR_DEFINITION = 'action often performed by naught kids messing up with the inputs'
+ERROR_DEFINITION = 'action often performed by naughty kids messing up with the inputs.'
+ERROR_DEFINITION_CHAT_GPT = 'ChatGPT is not in the mood.'
 ERROR_SEE_ALSO = 'oops'
 ERROR_AVATAR = 'troll'
+
+DEFAULT_WORD = 'Entropitis'
+DEFAULT_DEFINITION = 'A condition defined by the uncontrollable urge to introduce superfluous complexity in systems or processes.'
+DEFAULT_SEE_ALSO = 'autokafka'
 
 WORD_MAX_LENGTH = 20
 DEFINITION_MAX_LENGTH = 160
@@ -34,5 +39,5 @@ AVATAR_LIST = ['none', 'grug', 'normand', 'troll', 'lasers', 'lulz', 'randall']
 
 SUBTITLE_LIST = [ "Home of the fake",
                   "The Ministry of Silly Words",
-                  "That extra slide on your power point",
+                  "The missing slide on your presentation",
                   "\"I write my own dictionary\"", ]
