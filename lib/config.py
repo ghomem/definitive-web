@@ -40,4 +40,8 @@ AVATAR_LIST = ['none', 'grug', 'normand', 'troll', 'lasers', 'lulz', 'randall']
 SUBTITLE_LIST = [ "Home of the fake",
                   "The Ministry of Silly Words",
                   "The missing slide on your presentation",
-                  "\"I write my own dictionary\"", ]
+                  "\"I write my own dictionary\"",
+                  "A reliable source of nonsense",
+                  "A tsunami of name value pairs",
+                  "Little more than this information"
+                ]
