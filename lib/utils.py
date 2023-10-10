@@ -5,7 +5,7 @@ from .config import WORD_MAX_LENGTH, DEFINITION_MAX_LENGTH, SEE_ALSO_MAX_LENGTH
 
 def hold_on(base, maxdelta):
 
-    ourdelay = base + random.random()*maxdelta
+    ourdelay = base + random.random() * maxdelta
     time.sleep(ourdelay)
 
 
