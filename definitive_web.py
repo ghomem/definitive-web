@@ -4,7 +4,7 @@ import subprocess
 from flask import Flask, render_template, request
 
 # import our utility functions and constants
-from lib.utils import generate_random_string, is_word, is_word_class, is_definition, is_see_also, is_avatar, validate_inputs, hold_on
+from lib.utils import generate_random_string, is_word, is_word_class, is_definition, is_see_also, is_avatar, validate_inputs, hold_on, get_random_subtitle
 from lib.config import (WHITELIST_TMP, ID_STRING_LENGTH, PYTHON_CMD, RENDER_CMD, RENDER_OPT_WORD_CLASS,  ERROR_WORD, ERROR_WORD_CLASS,
                         ERROR_DEFINITION, ERROR_SEE_ALSO, ERROR_AVATAR, WORD_MAX_LENGTH, DEFINITION_MAX_LENGTH, SEE_ALSO_MAX_LENGTH, IMG_TEXT_COLOR,
                         IMG_BORDER_COLOR, IMG_TOP_MARGIN, BASE_DELAY, MAX_DELAY_DELTA)
@@ -78,7 +78,9 @@ def render():
 @app.route('/')
 def main_page():
 
-    return render_template('main.html.j2', title="Definitive", subtitle="A place for less than serious definitions",
+    subtitle = get_random_subtitle()
+
+    return render_template('main.html.j2', title="Definitive", subtitle=subtitle,
                            word_max_length=WORD_MAX_LENGTH, definition_max_length=DEFINITION_MAX_LENGTH,
                            see_also_max_length=SEE_ALSO_MAX_LENGTH, border_color=IMG_BORDER_COLOR, img_top_margin=IMG_TOP_MARGIN)
 

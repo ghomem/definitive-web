@@ -29,3 +29,10 @@ IMG_TOP_MARGIN = "35"
 
 BASE_DELAY = 0.2
 MAX_DELAY_DELTA = 0.2
+
+AVATAR_LIST = ['none', 'grug', 'normand', 'troll', 'lasers', 'lulz', 'randall']
+
+SUBTITLE_LIST = [ "Home of the fake",
+                  "The Ministry of Silly Words",
+                  "That extra slide on your power point",
+                  "\"I write my own dictionary\"", ]
