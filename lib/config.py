@@ -43,5 +43,7 @@ SUBTITLE_LIST = [ "Home of the fake",
                   "\"I write my own dictionary\"",
                   "A reliable source of nonsense",
                   "A tsunami of name value pairs",
-                  "Little more than this information"
+                  "Little more than this information",
+                  "An infinite stream of misunderstandings",
+                  "The Niagara falls of controversial semantics",
                 ]
