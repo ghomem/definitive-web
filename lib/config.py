@@ -35,7 +35,7 @@ IMG_TOP_MARGIN = "35"
 BASE_DELAY = 0.2
 MAX_DELAY_DELTA = 0.2
 
-AVATAR_LIST = ['none', 'grug', 'normand', 'troll', 'lasers', 'lulz', 'randall']
+AVATAR_LIST = ['none', 'grug', 'normand', 'troll', 'lasers', 'lulz', 'randall', 'homer', 'minister']
 
 SUBTITLE_LIST = [ "Home of the fake",
                   "The Ministry of Silly Words",
@@ -46,4 +46,7 @@ SUBTITLE_LIST = [ "Home of the fake",
                   "Little more than this information",
                   "An infinite stream of misunderstandings",
                   "The Niagara falls of controversial semantics",
-                ]
+                  "The authoritative nounserver",
+                  "A weapon of mass distraction",
+                  "The one stop chop for language matters",
+                  ]
