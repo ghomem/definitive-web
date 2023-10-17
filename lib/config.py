@@ -49,4 +49,7 @@ SUBTITLE_LIST = [ "Home of the fake",
                   "The authoritative nounserver",
                   "A weapon of mass distraction",
                   "The one stop chop for language matters",
+                  "The place were great words RIP",
+                  "Meme generator for true intelectuals",
+                  "Fast food for thought"
                   ]
