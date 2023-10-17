@@ -46,41 +46,7 @@
             <form hx-post="/render" hx-target="#the-image" autocomplete="off">
 
               <!-- this div includes all the input fields -->
-              <div id="the-input-fields" hx-swap-oob="true">
-                <!-- Input fields -->
-                <label for="word">Word</label>
-                <input type="text" id="word" name="word" maxlength="{{word_max_length}}"  value="{{default_word}}" />
-
-                <label for="word_class">Word Class</label>
-                <select id="word_class" name="word_class" required>
-                  <option value="noun" selected>noun</option>
-                  <option value="verb">verb</option>
-                  <option value="adjective">adjective</option>
-                  <option value="whoknows">whoknows</option>
-                </select>
-
-                <label for="definition">Definition</label>
-                <div id="the-definition" hx-swap-oob="true">
-                  <textarea id="definition" name="definition" maxlength="{{definition_max_length}}" rows="3">{{default_definition}}</textarea>
-                </div>
-
-                <label for="see_also">See also</label>
-                <input type="text" id="see_also" name="see_also" maxlength="{{see_also_max_length}}" value="{{default_see_also}}" />
-
-                <!-- Select -->
-                <label for="avatar">Avatar</label>
-                <select id="avatar" name="avatar" required>
-                  <option value="none">None</option>
-                  <option value="grug">Grug</option>
-                  <option value="normand" selected>Normand</option>
-                  <option value="troll">Troll</option>
-                  <option value="lasers">Lasers</option>
-                  <option value="lulz">Lulz</option>
-                  <option value="randall">Randall</option>
-                  <option value="homer">Homer</option>
-                  <option value="minister">Minister</option>
-                </select>
-              </div>
+              {% include 'input-fields-div.html.j2' %}
               <!-- end of the input fields div -->
 
               <!-- Buttons -->
