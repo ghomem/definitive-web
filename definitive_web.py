@@ -106,7 +106,7 @@ def main_page():
     return render_template('main.html.j2', title="Definitive", subtitle=subtitle, word_max_length=WORD_MAX_LENGTH,
                            definition_max_length=DEFINITION_MAX_LENGTH, see_also_max_length=SEE_ALSO_MAX_LENGTH,
                            border_color=IMG_BORDER_COLOR, img_top_margin=IMG_TOP_MARGIN, default_word=DEFAULT_WORD,
-                           default_definition=DEFAULT_DEFINITION, default_see_also=DEFAULT_SEE_ALSO)
+                           default_definition=DEFAULT_DEFINITION, default_see_also=DEFAULT_SEE_ALSO, google_verification_tag=GOOGLE_VERIFICATION_TAG)
 
 
 if __name__ == '__main__':

@@ -53,3 +53,5 @@ SUBTITLE_LIST = [ "Home of the fake",
                   "Meme generator for true intelectuals",
                   "Fast food for thought"
                   ]
+
+GOOGLE_VERIFICATION_TAG="kVSmooBN_-CkTbqCN9T58wB3aWx0EPC_w2QycFuXbtY"
