@@ -46,7 +46,7 @@
             <form hx-post="/render" hx-target="#the-image" autocomplete="off">
 
               <!-- this div includes all the input fields -->
-              {% include 'input-fields-div.html.j2' %}
+              {% include 'input-fields-div.html.j2' with context %}
               <!-- end of the input fields div -->
 
               <!-- Buttons -->
