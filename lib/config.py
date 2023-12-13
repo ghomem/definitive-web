@@ -25,7 +25,7 @@ DEFAULT_DEFINITION = 'A condition defined by the uncontrollable urge to introduc
 DEFAULT_SEE_ALSO = 'autokafka'
 
 WORD_MAX_LENGTH = 20
-DEFINITION_MAX_LENGTH = 190
+DEFINITION_MAX_LENGTH = 160
 SEE_ALSO_MAX_LENGTH = 20
 
 IMG_TEXT_COLOR = "#042c49"
